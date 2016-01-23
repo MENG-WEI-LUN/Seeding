@@ -11,9 +11,54 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () 
+{
     return view('welcome');
-    //throw new Exception('Tracy works!');
+    
+});
+
+Route::get('Hot',['as' => 'Hot',function()
+	{
+		return'that is Hot page';
+	}]);
+
+Route::get('All',['as' => 'All',function()
+	{
+		return'that is All page';
+	}]);
+
+Route::get('featured',['as' => 'featured',function()
+	{
+		return'that is Hot featured';
+	}]);
+
+Route::get('random',['as' => 'random',function()
+	{
+		return'that is Hot random';
+	}]);
+Route::get('post',['as' => 'post',function()
+	{
+		return view('post');
+	}]);
+
+
+
+Route::group(['prefix' => 'post'],function()
+{
+
+	Route::get('name',['as' => 'name' ,function()
+		{
+			return 'that is name page';
+		}]);
+	Route::get('title',['as' => 'title' ,function()
+		{
+			return 'that is title page!';
+		}]);
+	Route::get('fox',['as' => 'author' ,function()
+		{
+			return 'that is author fox page!';
+		}]);
+	
 });
 
 /*

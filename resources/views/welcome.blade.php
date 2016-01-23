@@ -39,6 +39,19 @@
         <div class="container">
             <div class="content">
                 <div class="title">Laravel 5</div>
+                <center>
+                    <table border="1"  >
+                        <tr >
+                        <td><a href = "{{ route('All')}}">All</a></td>
+                        <td><a href = "{{ route('Hot')}}">Hot</a></td>
+                        <td><a href = "{{ route('featured')}}">featured</a></td>
+                        <td><a href = "{{ route('random')}}">random</a></td>
+                        <td><a href = "{{ route('post')}}">post</a></td>
+                        
+                        </tr>
+                    
+                    </table>
+                </center>
             </div>
         </div>
     </body>
