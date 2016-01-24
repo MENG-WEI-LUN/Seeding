@@ -12,10 +12,10 @@
 */
 
 Route::get('/', function () 
-{
-    return view('welcome');
-    
-});
+	{
+	    return view('welcome');
+	    
+	});
 
 Route::get('Hot',['as' => 'Hot',function()
 	{
@@ -45,18 +45,19 @@ Route::get('post',['as' => 'post',function()
 
 Route::group(['prefix' => 'post'],function()
 {
-
 	Route::get('name',['as' => 'name' ,function()
 		{
 			return 'that is name page';
 		}]);
+
 	Route::get('title',['as' => 'title' ,function()
 		{
 			return 'that is title page!';
 		}]);
+
 	Route::get('fox',['as' => 'author' ,function()
 		{
-			return 'that is author fox page!';
+			return 'that is author Wu-Xia page!';
 		}]);
 	
 });
@@ -71,7 +72,8 @@ Route::group(['prefix' => 'post'],function()
 | kernel and includes session state, CSRF protection, and more.
 |
 */
-
+/*
 Route::group(['middleware' => ['web']], function () {
     //
 });
+*/
