@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Creative - @y ld</title>
+    <title>Creative - @yield('title')</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -36,7 +36,7 @@
 <body id="page-top">
     <!-- jQuery -->
 
-    @include(navigation)
+    @include('navigation')
     @yield('content')
 
 

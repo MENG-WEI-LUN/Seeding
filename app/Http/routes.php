@@ -13,9 +13,32 @@
 
 Route::get('/', function () 
 	{
-	    return view('welcome');
+	    return view('index');
 	    
 	});
+
+Route::get('about', function () 
+	{
+	    return view('about');
+	    
+	});
+Route::get('service', function () 
+	{
+	    return view('service');
+	    
+	});
+Route::get('portfolio', function () 
+	{
+	    return view('portfolio');
+	    
+	});
+Route::get('contact', function () 
+	{
+	    return view('contact');
+	    
+	});
+
+
 
 Route::get('Hot',['as' => 'Hot',function()
 	{
@@ -29,12 +52,12 @@ Route::get('All',['as' => 'All',function()
 
 Route::get('featured',['as' => 'featured',function()
 	{
-		return'that is Hot featured';
+		return'that is featured featured';
 	}]);
 
 Route::get('random',['as' => 'random',function()
 	{
-		return'that is Hot random';
+		return'that is random random';
 	}]);
 Route::get('post',['as' => 'post',function()
 	{
