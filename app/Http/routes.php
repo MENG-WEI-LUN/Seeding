@@ -30,16 +30,13 @@ Route::get('service', function ()
 Route::get('portfolio', function () 
 	{
 	    return view('portfolio');
-	    
 	});
 Route::get('contact', function () 
 	{
 	    return view('contact');
 	    
 	});
-
-
-
+/*
 Route::get('Hot',['as' => 'Hot',function()
 	{
 		return'that is Hot page';
@@ -63,9 +60,6 @@ Route::get('post',['as' => 'post',function()
 	{
 		return view('post');
 	}]);
-
-
-
 Route::group(['prefix' => 'post'],function()
 {
 	Route::get('name',['as' => 'name' ,function()
@@ -83,7 +77,9 @@ Route::group(['prefix' => 'post'],function()
 			return 'that is author Wu-Xia page!';
 		}]);
 	
-});
+});*/
+
+
 
 /*
 |--------------------------------------------------------------------------
